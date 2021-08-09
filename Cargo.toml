@@ -15,6 +15,7 @@ doctest = false # Doc-tests would fail because it doesn't read rustflags in .con
 
 [features]
 no-intl = []
+default-panic-hook = []
 
 [dependencies]
 napi-sys = { version = "1", features = [ "napi7" ]}
