@@ -1,10 +1,10 @@
 [package]
 name = "nodejs"
-version = "0.2.2-alpha.0"
+version = "0.3.1-alpha.0"
 authors = ["patr0nus <dk4rest@gmail.com>"]
 license = "MIT"
 description = "Embedding Node.js in Rust"
-edition = "2018"
+edition = "2021"
 keywords = [ "node", "nodejs", "js", "javascript", "embedding" ]
 homepage = "https://github.com/patr0nus/rust-nodejs"
 repository = "https://github.com/patr0nus/rust-nodejs"
@@ -37,4 +37,4 @@ strum = { version = "0.20", features = [ "derive" ] }
 [build-dependencies.attohttpc]
 version = "0.17"
 default-features = false # No need for the compress feature
-features = [ "tls" ]
+features = [ "tls-rustls" ]
